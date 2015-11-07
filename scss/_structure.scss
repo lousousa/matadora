@@ -38,9 +38,9 @@ $sm: 640px;
 @mixin w-033 { width: 33.333333%; } @mixin w-066 { width: 66.666666%; }
 
 .mtd-row {
-	>[class*='-t'] { @include ib-t; font-size: initial; }
-	>[class*='-m'] { @include ib-m; font-size: initial; }
-	>[class*='-b'] { @include ib-b; font-size: initial; }
+	>[class*='0-t'], >[class*='3-t'], >[class*='5-t'], >[class*='6-t'] { @include ib-t; font-size: initial; }
+	>[class*='0-m'], >[class*='3-m'], >[class*='5-m'], >[class*='6-m'] { @include ib-m; font-size: initial; }
+	>[class*='0-b'], >[class*='3-b'], >[class*='5-b'], >[class*='6-b'] { @include ib-b; font-size: initial; }
 	
 	>[class*='lg-005-'] { @include w-005; } >[class*='lg-010-'] { @include w-010; }
 	>[class*='lg-015-'] { @include w-015; } >[class*='lg-020-'] { @include w-020; }
@@ -84,4 +84,5 @@ $sm: 640px;
 		>[class*='sm-033-'] { @include w-033; } >[class*='sm-066-'] { @include w-066; }
 	}
 }
-.mtd-row { font-size: 0px; display: block; }
+.mtd-row { font-size: 0px; }
+.mtd-row .mtd-row { font-size: 0px; }

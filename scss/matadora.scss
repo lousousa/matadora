@@ -8,6 +8,7 @@ section, summary, button, optgroup, select, label, tbody {
 body { position: absolute; margin: 0; width: 100%; }
 @import '_colors.scss';
 @import '_structure.scss';
+@import '_buttons.scss';
 @import '_forms.scss';
 @import '_modals.scss';
 @import '_tables.scss';

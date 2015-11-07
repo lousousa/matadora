@@ -1,0 +1,17 @@
+[class*='btn1'] {
+	border-radius: 2px;
+	display: inline-block; text-decoration: none; padding: 9px 27px; 
+}
+@mixin btn1($primary, $secondary) {
+	background-color: nth(nth($primary, $i), 4); color: nth(nth($secondary, 1), 1);
+	border-bottom: 3px solid nth(nth($primary, $i), 5);
+	&:hover {
+		margin-top: 2px; border-bottom: 1px solid nth(nth($primary, $i), 6);
+	}	
+}
+@for $i from 1 through 4 {
+	.btn1-blue#{$i} { @include btn1($blue, $white); }
+}
+@for $i from 1 through 2 {
+	.btn1-red#{$i} { @include btn1($red, $white); }
+}

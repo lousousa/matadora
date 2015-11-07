@@ -7,22 +7,26 @@
 		max-width: 640px; margin: 0 auto;
 		>.container-title {
 			text-align: right; padding-left: 16px; line-height: 38px;
-			background-color: nth($black1, 4); color: nth($white2, 1);
+			background-color: nth(nth($black, 1), 7);
+			color: nth(nth($white, 2), 1);
 			>.title { 
 				float: left;
 				display: inline-block;
 				font-size: 18px;
 			}
 			>.btn-close { 
-				background-color: nth($black1, 6); text-decoration: none;
-				color: nth($white2, 1); text-align: center; 
+				background-color: nth(nth($black, 1), 7);
+				color: nth(nth($white, 2), 8);
+				text-decoration: none;
+				text-align: center; 
 				font-size: 18px; display: inline-block; width: 44px;
-				height: 44px; 				
+				height: 44px;
+				&:hover { color: nth(nth($white, 2), 6); }			
 			}
 		}
 		>.container-content {
+			background-color: nth(nth($white, 1), 1);
 			font-size: 14px; padding: 16px;
-			background-color: nth($white1, 1);
 		}
 	}
 }
