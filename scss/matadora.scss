@@ -7,7 +7,7 @@ section, summary, button, optgroup, select, label, tbody {
 }
 body { position: absolute; margin: 0; width: 100%; }
 @import '_colors.scss';
-@import '_form.scss';
-@import '_modal.scss';
 @import '_structure.scss';
-@import '_table.scss';
+@import '_forms.scss';
+@import '_modals.scss';
+@import '_tables.scss';

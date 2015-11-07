@@ -1,0 +1,14 @@
+.mtd-form {
+	padding: 10px;
+	>.container-input {
+		padding: 10px;
+		>.label { display: block; }
+		>.input {
+			display: block; width: 100%; padding: 8px;
+		}
+	}
+	>.feedback-messages {
+		padding: 10px;
+		.message { display: block; font-size: initial; }
+	}
+}

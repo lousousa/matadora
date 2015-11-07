@@ -7,9 +7,9 @@ $sm: 640px;
 .ta-right { text-align: right; }
 .ta-center { text-align: center; }
 .ta-justify { text-align: justify; }
-.mw-1080 { max-width: $lg; }
-.mw-720 { max-width: $md; }
-.mw-640 { max-width: $sm; }
+.mw-1080 { margin: 0 auto; max-width: $lg; }
+.mw-720 { margin: 0 auto; max-width: $md; }
+.mw-640 { margin: 0 auto; max-width: $sm; }
 
 @media all and (min-width: $md) {
 	.lg-hide { display: none !important; }
@@ -38,50 +38,50 @@ $sm: 640px;
 @mixin w-033 { width: 33.333333%; } @mixin w-066 { width: 66.666666%; }
 
 .mtd-row {
-	[class*='-t'] { @include ib-t; font-size: initial; }
-	[class*='-m'] { @include ib-m; font-size: initial; }
-	[class*='-b'] { @include ib-b; font-size: initial; }
+	>[class*='-t'] { @include ib-t; font-size: initial; }
+	>[class*='-m'] { @include ib-m; font-size: initial; }
+	>[class*='-b'] { @include ib-b; font-size: initial; }
 	
-	[class*='lg-005-'] { @include w-005; } [class*='lg-010-'] { @include w-010; }
-	[class*='lg-015-'] { @include w-015; } [class*='lg-020-'] { @include w-020; }
-	[class*='lg-025-'] { @include w-025; } [class*='lg-030-'] { @include w-030; }
-	[class*='lg-035-'] { @include w-035; } [class*='lg-040-'] { @include w-040; }
-	[class*='lg-045-'] { @include w-045; } [class*='lg-050-'] { @include w-050; }
-	[class*='lg-055-'] { @include w-055; } [class*='lg-060-'] { @include w-060; }
-	[class*='lg-065-'] { @include w-065; } [class*='lg-070-'] { @include w-070; }
-	[class*='lg-075-'] { @include w-075; } [class*='lg-080-'] { @include w-080; }
-	[class*='lg-085-'] { @include w-085; } [class*='lg-090-'] { @include w-090; }
-	[class*='lg-095-'] { @include w-095; } [class*='lg-100-'] { @include w-100; }
-	[class*='lg-033-'] { @include w-033; } [class*='lg-066-'] { @include w-066; }
+	>[class*='lg-005-'] { @include w-005; } >[class*='lg-010-'] { @include w-010; }
+	>[class*='lg-015-'] { @include w-015; } >[class*='lg-020-'] { @include w-020; }
+	>[class*='lg-025-'] { @include w-025; } >[class*='lg-030-'] { @include w-030; }
+	>[class*='lg-035-'] { @include w-035; } >[class*='lg-040-'] { @include w-040; }
+	>[class*='lg-045-'] { @include w-045; } >[class*='lg-050-'] { @include w-050; }
+	>[class*='lg-055-'] { @include w-055; } >[class*='lg-060-'] { @include w-060; }
+	>[class*='lg-065-'] { @include w-065; } >[class*='lg-070-'] { @include w-070; }
+	>[class*='lg-075-'] { @include w-075; } >[class*='lg-080-'] { @include w-080; }
+	>[class*='lg-085-'] { @include w-085; } >[class*='lg-090-'] { @include w-090; }
+	>[class*='lg-095-'] { @include w-095; } >[class*='lg-100-'] { @include w-100; }
+	>[class*='lg-033-'] { @include w-033; } >[class*='lg-066-'] { @include w-066; }
 }
 @media all and (max-width: $md) {
 	.mtd-row {		
-		[class*='md-005-'] { @include w-005; } [class*='md-010-'] { @include w-010; }
-		[class*='md-015-'] { @include w-015; } [class*='md-020-'] { @include w-020; }
-		[class*='md-025-'] { @include w-025; } [class*='md-030-'] { @include w-030; }
-		[class*='md-035-'] { @include w-035; } [class*='md-040-'] { @include w-040; }
-		[class*='md-045-'] { @include w-045; } [class*='md-050-'] { @include w-050; }
-		[class*='md-055-'] { @include w-055; } [class*='md-060-'] { @include w-060; }
-		[class*='md-065-'] { @include w-065; } [class*='md-070-'] { @include w-070; }
-		[class*='md-075-'] { @include w-075; } [class*='md-080-'] { @include w-080; }
-		[class*='md-085-'] { @include w-085; } [class*='md-090-'] { @include w-090; }
-		[class*='md-095-'] { @include w-095; } [class*='md-100-'] { @include w-100; }
-		[class*='md-033-'] { @include w-033; } [class*='md-066-'] { @include w-066; }
+		>[class*='md-005-'] { @include w-005; } >[class*='md-010-'] { @include w-010; }
+		>[class*='md-015-'] { @include w-015; } >[class*='md-020-'] { @include w-020; }
+		>[class*='md-025-'] { @include w-025; } >[class*='md-030-'] { @include w-030; }
+		>[class*='md-035-'] { @include w-035; } >[class*='md-040-'] { @include w-040; }
+		>[class*='md-045-'] { @include w-045; } >[class*='md-050-'] { @include w-050; }
+		>[class*='md-055-'] { @include w-055; } >[class*='md-060-'] { @include w-060; }
+		>[class*='md-065-'] { @include w-065; } >[class*='md-070-'] { @include w-070; }
+		>[class*='md-075-'] { @include w-075; } >[class*='md-080-'] { @include w-080; }
+		>[class*='md-085-'] { @include w-085; } >[class*='md-090-'] { @include w-090; }
+		>[class*='md-095-'] { @include w-095; } >[class*='md-100-'] { @include w-100; }
+		>[class*='md-033-'] { @include w-033; } >[class*='md-066-'] { @include w-066; }
 	}
 }
 @media all and (max-width: $sm) {
 	.mtd-row {		
-		[class*='sm-005-'] { @include w-005; } [class*='sm-010-'] { @include w-010; }
-		[class*='sm-015-'] { @include w-015; } [class*='sm-020-'] { @include w-020; }
-		[class*='sm-025-'] { @include w-025; } [class*='sm-030-'] { @include w-030; }
-		[class*='sm-035-'] { @include w-035; } [class*='sm-040-'] { @include w-040; }
-		[class*='sm-045-'] { @include w-045; } [class*='sm-050-'] { @include w-050; }
-		[class*='sm-055-'] { @include w-055; } [class*='sm-060-'] { @include w-060; }
-		[class*='sm-065-'] { @include w-065; } [class*='sm-070-'] { @include w-070; }
-		[class*='sm-075-'] { @include w-075; } [class*='sm-080-'] { @include w-080; }
-		[class*='sm-085-'] { @include w-085; } [class*='sm-090-'] { @include w-090; }
-		[class*='sm-095-'] { @include w-095; } [class*='sm-100-'] { @include w-100; }
-		[class*='sm-033-'] { @include w-033; } [class*='sm-066-'] { @include w-066; }
+		>[class*='sm-005-'] { @include w-005; } >[class*='sm-010-'] { @include w-010; }
+		>[class*='sm-015-'] { @include w-015; } >[class*='sm-020-'] { @include w-020; }
+		>[class*='sm-025-'] { @include w-025; } >[class*='sm-030-'] { @include w-030; }
+		>[class*='sm-035-'] { @include w-035; } >[class*='sm-040-'] { @include w-040; }
+		>[class*='sm-045-'] { @include w-045; } >[class*='sm-050-'] { @include w-050; }
+		>[class*='sm-055-'] { @include w-055; } >[class*='sm-060-'] { @include w-060; }
+		>[class*='sm-065-'] { @include w-065; } >[class*='sm-070-'] { @include w-070; }
+		>[class*='sm-075-'] { @include w-075; } >[class*='sm-080-'] { @include w-080; }
+		>[class*='sm-085-'] { @include w-085; } >[class*='sm-090-'] { @include w-090; }
+		>[class*='sm-095-'] { @include w-095; } >[class*='sm-100-'] { @include w-100; }
+		>[class*='sm-033-'] { @include w-033; } >[class*='sm-066-'] { @include w-066; }
 	}
 }
-.mtd-row { font-size: 0px; }
+.mtd-row { font-size: 0px; display: block; }
