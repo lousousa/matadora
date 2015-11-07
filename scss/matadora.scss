@@ -1,0 +1,13 @@
+article, aside, details, figcaption, figure, fieldset,
+footer, header, hgroup, menu, nav, div, main, legend,
+form, a, span, pre, strong, h1, h2, h3, h4, h5, h6,
+ul, ol, li, table, td, tr, th, input, textarea, p, thead,
+section, summary, button, optgroup, select, label, tbody { 
+	box-sizing: border-box; 
+}
+body { position: absolute; margin: 0; width: 100%; }
+@import '_colors.scss';
+@import '_form.scss';
+@import '_modal.scss';
+@import '_structure.scss';
+@import '_table.scss';
