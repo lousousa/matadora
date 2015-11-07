@@ -533,3 +533,19 @@ body {
   font-size: 14px;
   padding: 16px;
 }
+
+.mtd-table {
+  display: block;
+}
+
+.mtd-table thead, .mtd-table tbody {
+  display: block;
+}
+
+.mtd-table tr {
+  display: block;
+}
+
+.mtd-table tr .cell {
+  padding: 10px;
+}
