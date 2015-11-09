@@ -425,6 +425,7 @@ body {
 .mtd-modal-opened {
   font-size: 0px;
   padding-top: 60px;
+  overflow-y: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -481,6 +482,7 @@ body {
 .mtd-modal-closed {
   font-size: 0px;
   padding-top: 0;
+  overflow-y: auto;
   background-color: black;
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
