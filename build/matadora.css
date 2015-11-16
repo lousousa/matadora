@@ -358,14 +358,14 @@ body {
 }
 
 .btn1-blue4 {
-  background-color: #005070;
+  background-color: #60a0c0;
   color: #ffffff;
-  border-bottom: 3px solid #00384e;
+  border-bottom: 3px solid #408090;
 }
 
 .btn1-blue4:hover {
   margin-top: 2px;
-  border-bottom: 1px solid #002c3d;
+  border-bottom: 1px solid #30616d;
 }
 
 .btn1-red1 {
@@ -409,13 +409,18 @@ body {
   padding: 8px;
 }
 
+.mtd-form > .container-input > textarea.input {
+  min-height: 200px;
+  resize: none;
+}
+
 .mtd-form > .feedback-messages {
   padding: 10px;
   margin: 0;
   font-size: 0px;
 }
 
-.mtd-form > .feedback-messages .message {
+.mtd-form > .feedback-messages > .message {
   display: block;
   line-height: 24px;
   font-size: initial;
