@@ -11,11 +11,12 @@ That's my personal CSS library.
 - .fs-initial
 - .ta-left, .ta-right, .ta-center, .ta-justify
 - .mw-1080, .mw-720, .mw-640
-- .sm-hide, .md-hide, .lg-hide
+- .lg-hide, .md-hide, .sm-hide
 - .mtd-row { .(lg,md,sm)-(005..100)-(t,m,b) }
 
 **Forms**
 
+```sh
 form.mtd-form {
 	>div.container-input {
 		>label.label
@@ -25,9 +26,11 @@ form.mtd-form {
 		>li.message
 	}
 }
+```
 
 **Modals**
 
+```sh
 div.mtd-modal(-opened,-closed) {
 	>div.panel {
 		>div.container-title {
@@ -39,9 +42,11 @@ div.mtd-modal(-opened,-closed) {
 		>div.container-content
 	}
 }
+```
 
 **Tables**
 
+```sh
 table.mtd-table { 
 	thead, tbody {
 		tr {
@@ -49,3 +54,4 @@ table.mtd-table {
 		}
 	}
 }
+```
