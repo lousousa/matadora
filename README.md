@@ -36,7 +36,7 @@ form.mtd-form {
 **Modals**
 
 ```sh
-div.mtd-modal(-opened,-closed) {
+div.mtd-modal-(opened,closed) {
 	>div.panel {
 		>div.container-title {
 			>span.title
