@@ -16,47 +16,11 @@ That's my personal CSS library.
 
 **Buttons**
 
-- .btn1-blue-(1..4)
+- .btn1-black-(1..2)
 - .btn1-red-(1..2)
-
-**Forms**
-
-```sh
-form.mtd-form {
-	>div.container-input {
-		>label.label
-		>(input,textarea,select).input
-	}
-	>ul.feedback-messages {
-		>li.message
-	}
-}
-```
-
-**Modals**
-
-```sh
-div.mtd-modal-(opened,closed) {
-	>div.panel {
-		>div.container-title {
-			>span.title
-			>a.btn-close {
-				&:hover		
-			}
-		}
-		>div.container-content
-	}
-}
-```
-
-**Tables**
-
-```sh
-table.mtd-table { 
-	thead, tbody {
-		tr {
-			th.cell
-		}
-	}
-}
-```
+- .btn1-green-(1..7)
+- .btn1-blue-(1..4)
+- .btn1-brown-(1..3)
+- .btn1-purple-(1..3)
+- .btn1-pink-(1..3)
+- .btn1-yellow-(1..3)
