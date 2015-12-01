@@ -37,9 +37,9 @@ body {
   max-width: 1080px;
 }
 
-.mw-720 {
+.mw-768 {
   margin: 0 auto;
-  max-width: 720px;
+  max-width: 768px;
 }
 
 .mw-640 {
@@ -47,13 +47,13 @@ body {
   max-width: 640px;
 }
 
-@media all and (min-width: 720px) {
+@media all and (min-width: 768px) {
   .lg-hide {
     display: none !important;
   }
 }
 
-@media all and (max-width: 720px) and (min-width: 640px) {
+@media all and (max-width: 768px) and (min-width: 640px) {
   .md-hide {
     display: none !important;
   }
@@ -171,7 +171,7 @@ body {
   width: 66.666666%;
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 768px) {
   .mtd-row > [class*='md-005-'] {
     width: 005%;
   }

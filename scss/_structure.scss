@@ -1,5 +1,5 @@
 $lg: 1080px;
-$md: 720px;
+$md: 768px;
 $sm: 640px;
 
 .fs-initial { font-size: initial; }
@@ -8,7 +8,7 @@ $sm: 640px;
 .ta-center { text-align: center; }
 .ta-justify { text-align: justify; }
 .mw-1080 { margin: 0 auto; max-width: $lg; }
-.mw-720 { margin: 0 auto; max-width: $md; }
+.mw-768 { margin: 0 auto; max-width: $md; }
 .mw-640 { margin: 0 auto; max-width: $sm; }
 
 @media all and (min-width: $md) {

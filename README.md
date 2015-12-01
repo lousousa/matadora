@@ -10,7 +10,7 @@ That's my personal CSS library.
 
 - .fs-initial
 - .ta-left, .ta-right, .ta-center, .ta-justify
-- .mw-1080, .mw-720, .mw-640
+- .mw-1080, .mw-768, .mw-640
 - .lg-hide, .md-hide, .sm-hide
 - .mtd-row { .(lg,md,sm)-(005..100)-(t,m,b) }
 
