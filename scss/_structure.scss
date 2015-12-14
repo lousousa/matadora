@@ -11,10 +11,10 @@ $sm: 640px;
 .mw-768 { margin: 0 auto; max-width: $md; }
 .mw-640 { margin: 0 auto; max-width: $sm; }
 
-@media all and (min-width: $md) {
+@media all and (min-width: ($md + 1px)) {
 	.lg-hide { display: none !important; }
 }
-@media all and (max-width: $md) and (min-width: $sm) {
+@media all and (max-width: $md) and (min-width: ($sm + 1px)) {
 	.md-hide { display: none !important; }
 }
 @media all and (max-width: $sm) {

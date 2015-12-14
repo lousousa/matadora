@@ -14,7 +14,7 @@ That's my personal CSS library.
 - .lg-hide, .md-hide, .sm-hide
 - .mtd-row { .(lg,md,sm)-(005..100)-(t,m,b) }
 
-**Buttons**
+**Buttons colorized**
 
 - .btn1-black-(1..2)
 - .btn1-red-(1..2)

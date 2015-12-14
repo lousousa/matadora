@@ -47,13 +47,13 @@ body {
   max-width: 640px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .lg-hide {
     display: none !important;
   }
 }
 
-@media all and (max-width: 768px) and (min-width: 640px) {
+@media all and (max-width: 768px) and (min-width: 641px) {
   .md-hide {
     display: none !important;
   }
