@@ -6,6 +6,5 @@ section, summary, button, optgroup, select, label, tbody {
 	box-sizing: border-box; 
 }
 body { position: absolute; margin: 0; width: 100%; }
-@import '_colors.scss';
+
 @import '_structure.scss';
-@import '_buttons.scss';

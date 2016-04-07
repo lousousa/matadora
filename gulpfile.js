@@ -12,12 +12,12 @@ gulp.task('styles', function() {
 	gulp
 		.src('scss/matadora.scss').pipe(plumber())
 		.pipe(autoprefixer({cascade: true})).pipe(sass({outputStyle: 'compressed'}))
-		.pipe(concat('matadora.min.css')).pipe(gulp.dest('./build/'))
+		.pipe(concat('matadora.min.css')).pipe(gulp.dest('./dist/'))
 		.pipe(reload({stream: true}));
 	gulp
 		.src('scss/matadora.scss').pipe(plumber())
 		.pipe(autoprefixer({cascade: true})).pipe(sass({outputStyle: 'expanded'}))
-		.pipe(concat('matadora.css')).pipe(gulp.dest('./build/'))
+		.pipe(concat('matadora.css')).pipe(gulp.dest('./dist/'))
 		.pipe(reload({stream: true}));
 });
 
