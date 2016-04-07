@@ -7,7 +7,7 @@
   ],
   "main": "dist/matadora.min.css",
   "ignore": [
-  	
+  	"*.md"
   ],
   "license": "MIT"
 }
