@@ -7,9 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "browser-sync": "^2.9.12",
     "gulp": "^3.9.0",
-    "gulp-file-include": "^0.13.7",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-plumber": "^1.0.1",

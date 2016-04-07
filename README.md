@@ -42,4 +42,5 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 
 ### Notes
 
-- The screen sizes are defined as 1080px+ for _large_, 768px+ for _middle_, and 640px+ for _small_.
+- The screen sizes are defined as 1080px+ for _large_, 768px+ for _middle_, and 640px+ for _small_;
+- Matadora applies the property _box-sizing: border-box_ to the mainly html elements.

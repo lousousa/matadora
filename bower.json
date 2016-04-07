@@ -1,0 +1,10 @@
+{
+  "name": "matadora",
+  "version": "1.0.0",
+  "description": "Matadora CSS library",
+  "keywords": [
+    "matadora"
+  ],
+  "main": "dist/matadora.min.css",
+  "license": "MIT"
+}

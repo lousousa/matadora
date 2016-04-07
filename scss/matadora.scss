@@ -5,6 +5,6 @@ ul, ol, li, table, td, tr, th, input, textarea, p, thead,
 section, summary, button, optgroup, select, label, tbody { 
 	box-sizing: border-box; 
 }
-body { position: absolute; margin: 0; width: 100%; }
+body { margin: 0; }
 
 @import '_structure.scss';
