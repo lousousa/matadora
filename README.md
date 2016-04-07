@@ -2,13 +2,13 @@
 
 ## Description
 
-That's my personal CSS library, which provides a simple grid system and another useful auxiliar styles.
+That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles.
 
 ## Using
 
 ### Grid system
 
-The grid is composed by a parent class **.mtd-row** (which represents a row) and immediately by a child class (which represents a column) which is formed by 3 variables _.x-y-z_, where:
+The grid is composed by a parent class **.mtd-row** (which represents a row) and immediately by a child class (which represents a column) is formed by 3 variables _.x-y-z_, where:
 - _x_ describes the screen size where that style is applied, intending responsive behaviour, it can be **lg** for _large_ or less, **md** for _middle_ or less, or **sm** for _small_ or less;
 - _y_ describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;
 - _z_ describes the vertical alignment of that column, in relation with the others in that same row, it can be **t** for _top_, **m** for _middle_, or **b** for _bottom_.
@@ -34,7 +34,7 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 </div>
 ```
 
-### Useful auxiliar styles
+### Useful auxiliary styles
 
 - **.ta-left, .ta-right, .ta-center, .ta-justify:** describes the _text-align_ property;
 - **.mw-1080, .mw-768, .mw-640:** describes the _max-width_ property;
