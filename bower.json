@@ -6,5 +6,8 @@
     "matadora"
   ],
   "main": "dist/matadora.min.css",
+  "ignore": [
+  	
+  ],
   "license": "MIT"
 }
