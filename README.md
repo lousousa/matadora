@@ -13,8 +13,10 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 - _y_ describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;
 - _z_ describes the vertical alignment of that column, in relation with the others in that same row, it can be **t** for _top_, **m** for _middle_, or **b** for _bottom_.
 
-**Note 1:** the _y_ value still accepts the special values 033 and 066.
-**Note 2:** the _z_ value can still be omitted, if you don't desire to specify the vertical alignment (the class name is defined just as _.x-y_).
+#### Notes
+
+- the _y_ value still accepts the special values 033 and 066.
+- the _z_ value can still be omitted, if you don't desire to specify the vertical alignment (the class name is defined just as _.x-y_).
 
 **Example:**
 
