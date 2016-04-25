@@ -13,7 +13,8 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 - _y_ describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;
 - _z_ describes the vertical alignment of that column, in relation with the others in that same row, it can be **t** for _top_, **m** for _middle_, or **b** for _bottom_.
 
-**Note:** the _y_ value still accepts the special values 033 and 066.
+**Note 1:** the _y_ value still accepts the special values 033 and 066.
+**Note 2:** the _z_ value can still be omitted, if you don't desire to specify the vertical alignment (the class name is defined just as _.x-y_).
 
 **Example:**
 
@@ -30,6 +31,27 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 	<div class="lg-050-m md-033-t sm-100-b">
 		This div will be displayed 50% wide on large screens, and vertical aligned at middle;
 		on medium screens, 33% and top; on small screens, 100% and bottom.
+	</div>
+</div>
+```
+
+**Generic using:**
+
+Optionally you can declare a column with no declared width, and defining just the vertical alignment, as the following example:
+
+```
+<div class="mtd-row">
+	<div class="mtd-col">
+		A generic column.
+	</div>
+	<div class="mtd-col-t">
+		A generic column vertically aligned by top.
+	</div>
+	<div class="mtd-col-m">
+		A generic column vertically aligned by middle.
+	</div>
+	<div class="mtd-col-b">
+		A generic column vertically aligned by bottom.
 	</div>
 </div>
 ```
