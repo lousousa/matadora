@@ -20,10 +20,6 @@ $sm: 640px;
 	.sm-hide { display: none !important; }
 }
 
-@mixin ib-t { display: inline-block; vertical-align: top; }
-@mixin ib-m { display: inline-block; vertical-align: middle; }
-@mixin ib-b { display: inline-block; vertical-align: bottom; }
-
 @mixin w-005 { width: 005%; } @mixin w-010 { width: 010%; }
 @mixin w-015 { width: 015%; } @mixin w-020 { width: 020%; }
 @mixin w-025 { width: 025%; } @mixin w-030 { width: 030%; }
@@ -44,10 +40,19 @@ $sm: 640px;
 	>.mtd-col-m { display: inline-block; vertical-align: middle; }
 	>.mtd-col-b { display: inline-block; vertical-align: bottom; }
 	
-	>[class*="0-t"], >[class*="3-t"], >[class*="5-t"], >[class*="6-t"] { @include ib-t; }
-	>[class*="0-m"], >[class*="3-m"], >[class*="5-m"], >[class*="6-m"] { @include ib-m; }
-	>[class*="0-b"], >[class*="3-b"], >[class*="5-b"], >[class*="6-b"] { @include ib-b; }
-	
+	>[class*="0-t"], >[class*="3-t"], >[class*="5-t"], >[class*="6-t"] { vertical-align: top; }
+	>[class*="0-m"], >[class*="3-m"], >[class*="5-m"], >[class*="6-m"] {vertical-align: middle; }
+	>[class*="0-b"], >[class*="3-b"], >[class*="5-b"], >[class*="6-b"] { vertical-align: bottom; }
+
+	$sizes: lg md sm;
+
+	@each $size in $sizes {
+		@for $i from 0 through 9 {
+			>[class*="#{$size}-0#{$i}"] { display: inline-block; }
+		}
+		>[class*="#{$size}-10"] { display: inline-block; }
+	}
+
 	>[class*="lg-005"] { @include w-005; } >[class*="lg-010"] { @include w-010; }
 	>[class*="lg-015"] { @include w-015; } >[class*="lg-020"] { @include w-020; }
 	>[class*="lg-025"] { @include w-025; } >[class*="lg-030"] { @include w-030; }
