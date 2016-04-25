@@ -4,7 +4,13 @@
 
 That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles.
 
-## Using
+## Installation
+
+```
+bower install matadora
+```
+
+## Usage
 
 ### Grid system
 
