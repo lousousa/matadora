@@ -16,7 +16,7 @@ The grid is composed by a parent class **.mtd-row** (which represents a row) and
 #### Notes
 
 - the _y_ value still accepts the special values 033 and 066.
-- the _z_ value can still be omitted, if you don't desire to specify the vertical alignment (the class name is defined just as _.x-y_).
+- the _z_ value can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as _.x-y_.
 
 **Example:**
 
