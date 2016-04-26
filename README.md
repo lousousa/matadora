@@ -2,7 +2,7 @@
 
 ## Description
 
-That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles.
+That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles. No colors, no decoration, no theming.
 
 ## Installation
 
