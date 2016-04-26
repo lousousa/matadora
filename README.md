@@ -73,4 +73,4 @@ Optionally you can declare a column with no declared width, and defining just th
 ### Notes
 
 - The screen sizes are defined as 1080px+ for _large_, 768px+ for _middle_, and 640px+ for _small_;
-- Matadora applies the property _box-sizing: border-box_ to the mainly html elements.
+- Matadora applies the property _box-sizing: border-box_ on the mainly html elements.
