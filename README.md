@@ -67,7 +67,7 @@ Optionally you can declare a column with no declared width, and defining just th
 ### Useful auxiliary styles
 
 - **.ta-left, .ta-right, .ta-center, .ta-justify:** describes the _text-align_ property;
-- **.mw-1080, .mw-768, .mw-640:** describes the _max-width_ property;
+- **.mw-1080, .mw-768, .mw-640:** describes the _max-width_ property, it matches with the available screen sizes;
 - **.lg-hide, .md-hide, .sm-hide:** hides an element (_display: none_) on that screen size.
 
 ### Notes
