@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Matadora by lousousa</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Matadora</h1>
+        <p>Minimalist CSS library focused on grid and layout structure definition. No colors, no decoration, no theming.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/lousousa/matadora" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/lousousa/matadora/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/lousousa/matadora/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="matadora-css-lib" class="anchor" href="#matadora-css-lib" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matadora CSS Lib</h1>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
+
+<p>That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles. No colors, no decoration, no theming.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<pre><code>bower install matadora
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a id="grid-system" class="anchor" href="#grid-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Grid system</h3>
+
+<p>The grid is composed by a parent class <strong>.mtd-row</strong> (which represents a row) and immediately by a child class (which represents a column) is formed by 3 variables <em>.x-y-z</em>, where:</p>
+
+<ul>
+<li>
+<em>x</em> describes the screen size where that style is applied, intending responsive behaviour, it can be <strong>lg</strong> for <em>large</em> or less, <strong>md</strong> for <em>middle</em> or less, or <strong>sm</strong> for <em>small</em> or less;</li>
+<li>
+<em>y</em> describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;</li>
+<li>
+<em>z</em> describes the vertical alignment of that column, in relation with the others in that same row, it can be <strong>t</strong> for <em>top</em>, <strong>m</strong> for <em>middle</em>, or <strong>b</strong> for <em>bottom</em>.</li>
+</ul>
+
+<p><strong>Notes:</strong></p>
+
+<ul>
+<li>the <em>y</em> value still accepts the special values 033 and 066.</li>
+<li>the <em>z</em> value can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as <em>.x-y</em>.</li>
+</ul>
+
+<p><strong>Example:</strong></p>
+
+<pre><code>&lt;div class="mtd-row"&gt;
+    &lt;div class="lg-025-m md-033-t sm-050-b"&gt;
+        This div will be displayed 25% wide on large screens, and vertical aligned at middle;
+        on medium screens, 33% and top; on small screens, 50% and bottom.
+    &lt;/div&gt;
+    &lt;div class="lg-025-m md-033-t sm-050-b"&gt;
+        This div will be displayed 25% wide on large screens, and vertical aligned at middle;
+        on medium screens, 33% and top; on small screens, 50% and bottom.
+    &lt;/div&gt;
+    &lt;div class="lg-050-m md-033-t sm-100-b"&gt;
+        This div will be displayed 50% wide on large screens, and vertical aligned at middle;
+        on medium screens, 33% and top; on small screens, 100% and bottom.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><strong>Generic using:</strong></p>
+
+<p>Optionally you can declare a column with no declared width, and defining just the vertical alignment, as the following example:</p>
+
+<pre><code>&lt;div class="mtd-row"&gt;
+    &lt;div class="mtd-col"&gt;
+        A generic column.
+    &lt;/div&gt;
+    &lt;div class="mtd-col-t"&gt;
+        A generic column vertically aligned by top.
+    &lt;/div&gt;
+    &lt;div class="mtd-col-m"&gt;
+        A generic column vertically aligned by middle.
+    &lt;/div&gt;
+    &lt;div class="mtd-col-b"&gt;
+        A generic column vertically aligned by bottom.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3>
+<a id="useful-auxiliary-styles" class="anchor" href="#useful-auxiliary-styles" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Useful auxiliary styles</h3>
+
+<ul>
+<li>
+<strong>.ta-left, .ta-right, .ta-center, .ta-justify:</strong> describes the <em>text-align</em> property;</li>
+<li>
+<strong>.mw-1080, .mw-768, .mw-640:</strong> describes the <em>max-width</em> property, it matches with the available screen sizes;</li>
+<li>
+<strong>.lg-hide, .md-hide, .sm-hide:</strong> hides an element (<em>display: none</em>) on that screen size.</li>
+</ul>
+
+<h3>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h3>
+
+<ul>
+<li>The screen sizes are defined as 1080px+ for <em>large</em>, 768px+ for <em>middle</em>, and 640px+ for <em>small</em>;</li>
+<li>Matadora applies the property <em>box-sizing: border-box</em> on the mainly html elements.</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/lousousa">lousousa</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
