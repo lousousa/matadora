@@ -15,14 +15,14 @@ bower install matadora
 ### Grid system
 
 The grid is composed by a parent class **.mtd-row** (which represents a row) and immediately by a child class (which represents a column) is formed by 3 variables _.x-y-z_, where:
-- _x_ describes the screen size where that style is applied, intending responsive behaviour, it can be **lg** for **_large_** or less, **md** for **_middle_** or less, or **sm** for **_small_**;
-- _y_ describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;
-- _z_ describes the vertical alignment of that column, in relation with the others in that same row, it can be **t** for **_top_**, **m** for **_middle_**, or **b** for **_bottom_**.
+- _x_ describes the screen size where that style is applied, intending responsive behaviour, it can be **lg** for **_large_** or less, **md** for **_medium_** or less, or **sm** for **_small_**;
+- _y_ describes the size of that column, it's a value of percentage and multiple by 5 and up to 100, formatted with 3 places (including leading zeros, if needed). For instance, it can be 005, 010, 015, ..., 100;
+- _z_ describes the vertical alignment of that column in relation with the others in that same row, it can be **t** for **_top_**, **m** for **_middle_**, or **b** for **_bottom_**.
 
 **Notes:**
 
-- the _y_ value still accepts the special values 033 and 066.
-- the _z_ value can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as _.x-y_.
+- the _y_ variable still accepts the special values 033 and 066, for special cases.
+- the _z_ variable can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as _.x-y_.
 
 **Example:**
 
@@ -53,13 +53,13 @@ Optionally you can declare a column with no declared width, and defining just th
 		A generic column.
 	</div>
 	<div class="mtd-col-t">
-		A generic column vertically aligned by top.
+		A generic column vertically aligned at top.
 	</div>
 	<div class="mtd-col-m">
-		A generic column vertically aligned by middle.
+		A generic column vertically aligned at middle.
 	</div>
 	<div class="mtd-col-b">
-		A generic column vertically aligned by bottom.
+		A generic column vertically aligned at bottom.
 	</div>
 </div>
 ```
@@ -70,9 +70,9 @@ Optionally you can declare a column with no declared width, and defining just th
 - **.mw-1080, .mw-768, .mw-640:** describes the _max-width_ property, it matches with the available screen sizes;
 - **.lg-hide, .md-hide, .sm-hide:** hides an element (_display: none_) on that screen size.
 
-### Notes
+### General notes
 
-- The screen sizes are defined as 1080px+ for _large_, 768px+ for _middle_, and 640px+ for _small_;
+- The screen sizes are defined as 1080px+ for _large_, 768px+ for _medium_, and 640px+ for _small_;
 - Matadora applies the property _box-sizing: border-box_ on the mainly html elements.
 
 ### Translation
