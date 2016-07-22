@@ -77,4 +77,4 @@ Optionally you can declare a column with no declared width, and defining just th
 
 ### Translation
 
-- ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) [Portuguese](tree/master/docs-translation/ptbr) 
+- ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) [Portuguese](../../tree/master/docs-translation/ptbr) 
