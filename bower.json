@@ -5,7 +5,7 @@
   "keywords": [
     "matadora"
   ],
-  "main": "dist/matadora.min.css",
+  "main": "dist/matadora.css",
   "ignore": [
   	"*.md"
   ],
