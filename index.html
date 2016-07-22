@@ -4,40 +4,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Matadora by lousousa</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-
+    <div class="wrapper">
       <header>
         <h1>Matadora</h1>
         <p>Minimalist CSS library focused on grid and layout structure definition. No colors, no decoration, no theming.</p>
+
+        <p class="view"><a href="https://github.com/lousousa/matadora">View the Project on GitHub <small>lousousa/matadora</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lousousa/matadora/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lousousa/matadora/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lousousa/matadora">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/lousousa/matadora" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/lousousa/matadora/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/lousousa/matadora/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
       <section>
         <h1>
 <a id="matadora-css-lib" class="anchor" href="#matadora-css-lib" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matadora CSS Lib</h1>
@@ -45,7 +34,7 @@
 <h2>
 <a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
 
-<p>That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles. No colors, no decoration, no theming.</p>
+<p>Matadora is a CSS library that provides a simple grid system and other useful auxiliary styles for layout building. No colors, no decoration, no theming.</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
@@ -63,18 +52,18 @@
 
 <ul>
 <li>
-<em>x</em> describes the screen size where that style is applied, intending responsive behaviour, it can be <strong>lg</strong> for <em>large</em> or less, <strong>md</strong> for <em>middle</em> or less, or <strong>sm</strong> for <em>small</em> or less;</li>
+<em>x</em> describes the screen size where that style is applied, intending responsive behaviour, it can be <strong>lg</strong> for <strong><em>large</em></strong> or less, <strong>md</strong> for <strong><em>medium</em></strong> or less, or <strong>sm</strong> for <strong><em>small</em></strong>;</li>
 <li>
-<em>y</em> describes the size of that column, it's a value of percentage and multiple by 5, excluding zero and up to 100, formatted with 3 places (displaying leading zeros, if needed). For instance, it can be 005, 010, 015, ...,100;</li>
+<em>y</em> describes the size of that column, it's a value of percentage and multiple by 5 and up to 100, formatted with 3 places (including leading zeros, if needed). For instance, it can be 005, 010, 015, ..., 100;</li>
 <li>
-<em>z</em> describes the vertical alignment of that column, in relation with the others in that same row, it can be <strong>t</strong> for <em>top</em>, <strong>m</strong> for <em>middle</em>, or <strong>b</strong> for <em>bottom</em>.</li>
+<em>z</em> describes the vertical alignment of that column in relation with the others in that same row, it can be <strong>t</strong> for <strong><em>top</em></strong>, <strong>m</strong> for <strong><em>middle</em></strong>, or <strong>b</strong> for <strong><em>bottom</em></strong>.</li>
 </ul>
 
 <p><strong>Notes:</strong></p>
 
 <ul>
-<li>the <em>y</em> value still accepts the special values 033 and 066.</li>
-<li>the <em>z</em> value can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as <em>.x-y</em>.</li>
+<li>the <em>y</em> variable still accepts the special values 033 and 066, for special cases.</li>
+<li>the <em>z</em> variable can still be omitted, if you don't desire to specify the vertical alignment, so the class name is defined just as <em>.x-y</em>.</li>
 </ul>
 
 <p><strong>Example:</strong></p>
@@ -104,13 +93,13 @@
         A generic column.
     &lt;/div&gt;
     &lt;div class="mtd-col-t"&gt;
-        A generic column vertically aligned by top.
+        A generic column vertically aligned at top.
     &lt;/div&gt;
     &lt;div class="mtd-col-m"&gt;
-        A generic column vertically aligned by middle.
+        A generic column vertically aligned at middle.
     &lt;/div&gt;
     &lt;div class="mtd-col-b"&gt;
-        A generic column vertically aligned by bottom.
+        A generic column vertically aligned at bottom.
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -128,19 +117,27 @@
 </ul>
 
 <h3>
-<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Notes</h3>
+<a id="general-notes" class="anchor" href="#general-notes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>General notes</h3>
 
 <ul>
-<li>The screen sizes are defined as 1080px+ for <em>large</em>, 768px+ for <em>middle</em>, and 640px+ for <em>small</em>;</li>
+<li>The screen sizes are defined as 1080px+ for <em>large</em>, 768px+ for <em>medium</em>, and 640px+ for <em>small</em>;</li>
 <li>Matadora applies the property <em>box-sizing: border-box</em> on the mainly html elements.</li>
+</ul>
+
+<h3>
+<a id="translation" class="anchor" href="#translation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Translation</h3>
+
+<ul>
+<li>
+<img src="https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png" alt="PT-BR"> <a href="https://github.com/lousousa/matadora/tree/master/docs-translation/ptbr">Portuguese</a> </li>
 </ul>
       </section>
       <footer>
-        <p>Project maintained by <a href="https://github.com/lousousa">lousousa</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <p>This project is maintained by <a href="https://github.com/lousousa">lousousa</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
