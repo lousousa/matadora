@@ -2,7 +2,7 @@
 
 ## Description
 
-That's my personal CSS library, which provides a simple grid system and another useful auxiliary styles. No colors, no decoration, no theming.
+Matadora is a CSS library that provides a simple grid system and other useful auxiliary styles for layout building. No colors, no decoration, no theming.
 
 ## Installation
 
