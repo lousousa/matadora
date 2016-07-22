@@ -74,3 +74,7 @@ Optionally you can declare a column with no declared width, and defining just th
 
 - The screen sizes are defined as 1080px+ for _large_, 768px+ for _middle_, and 640px+ for _small_;
 - Matadora applies the property _box-sizing: border-box_ on the mainly html elements.
+
+### Translation
+
+- ![PT-BR](https://raw.githubusercontent.com/gosquared/flags/master/flags/flags/shiny/24/Brazil.png) [Portuguese](tree/master/docs-translation/ptbr) 
